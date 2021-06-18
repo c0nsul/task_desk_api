@@ -22,7 +22,10 @@ class CardFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name(),
+            'desk_list_id' => rand(1,10),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }
